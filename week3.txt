@@ -1,0 +1,161 @@
+// // // var oddcount = function(x,y){
+// // //     var count = 0;
+// // //     for(var i = x;i<=y;i++){
+// // //         if(i%2!=0){
+// // //             count++;
+// // //         }
+// // //     } 
+// // //     return count;
+// // // }
+// // //  console.log(oddcount(3,9));// 3,5,7,9,
+
+
+// // // standard built in objects--- string, array, regexp
+// // //  methods and properties you have in string, array and regexp so that
+// // //  you can do computations in string, array and regexp
+
+// // // object is anything that has properties and methods
+
+// // //  these are objects already defined in js that you could use for computation purposes
+
+// // // var str = "this , is, my, string";
+// // // // i want each word in this string to be an element of an array
+
+// // // var arr = str.split(","); // the seperator between two elements is the space
+
+// // // console.log(arr[0]);
+
+
+// // // console.log(str.slice(8));// starting index, ending index, if ending index is missing, goes till the end of the string
+// // // console.log("the last 6 characters:"+str.slice(-6));
+// // // console.log("  "+str.slice(-6, -3));
+// // // var str1 = 'this is another string';
+// // // // console.log(str.length);// 17 characters including white space
+// // // // console.log(str.charAt(3));// return character at a particular index
+// // // // console.log(str.concat(" ",str1));
+
+// // // console.log(str.includes("string"));// return boolean based on if the substring is there
+// // // console.log(str.startsWith("this")); // checks if the string starts with the substring
+
+// // var a = 5;
+// // var b = 6;
+// // // ${variable}
+// // console.log("the sum of "+a+" and "+b+" is: \n"+(a+b));
+// // console.log(`the sum of ${a} and ${b} is: 
+// // ${a+b}`);// template literal notation
+
+// //  difference between array in js and array in c
+
+// // you don't need to specify the size
+
+// // var arr = [];
+// // arr[1] = false;
+// // arr[3] = "Hi there";
+// // arr[4] = 3.142;
+// // arr[5] = 32;
+
+// // console.log(arr);
+// // // you don't need to specify type
+
+// //  Methods that modify the original array
+
+// // push, unshift, pop, shift
+
+// // var arr = [];
+
+// // arr.push(4);// insert 4 at the end of the array
+// // arr.push(5);// insert 5 at the end of the array 4,5
+// // arr.unshift(3);// insert 3 at the beginning of the array
+// // arr.push(6);// 6 added to end of array
+// // console.log(arr);// 3,4,5,6
+
+// // console.log(arr.pop()); // remove and return the last element
+// // console.log(arr.shift()); // remove and return the first element
+
+// // console.log("the final array is:"+arr);
+
+
+// var arr = [1,2,3,4,5,6];
+
+// // console.log(arr.concat([7,8,9,10]));
+
+// // console.log(arr.includes(10));
+
+// console.log(arr.indexOf(19));// 3, -1 if the search item is missing // returns the position of the search item
+
+// // console.log(arr.join(" and "));// return a string with all the elements separated by space
+
+
+//  suppose we have an existing array
+// input array [1,2,3,4,5]
+//  create another new array and add the existing array+3 
+// output array [4,5,6,7,8]
+
+// var arr = [1,2,3,4,5];// 5 elements
+// var arr1 = []; // 4 = (1+3),5 = (2+3),6 = (3+3),7 = (4+3),8 = (5+3) // 5 elements
+// //var temp;
+
+// // for(var i=0;i<arr.length;i++){
+// //     temp = arr[i]+3;
+// //     arr1.push(temp);
+// // }
+// // take as input a callback function that executes and does the computation with element
+// //  being the current index
+// arr.forEach(function(element){
+//     // the callback function is executed 5 times
+//     //  in the first execution element = 1
+//     //  in the second execution elemnt = 2
+//     arr1.push(element+3);   
+// })
+
+
+
+// console.log(arr1);
+
+// var arr = ["     hi     ", "hello      "];
+// // map does the computation and then returns the elemnts and saves it as the last element
+// //  of a new array
+// var arr1 = arr.map(function(element){
+//     return element.trim();
+// })
+// // arr.forEach(function(element){
+// //     arr1.push(element);
+// // })
+// console.log(arr1);
+
+// // var arr2 = [1,2,3,4,5];
+// // var arr3 = arr2.map((element)=>element+3)
+// // console.log(arr3);
+
+// for each is used to do computation on an array only (doesn't return anything)
+//  map is used to do computation and save the value in a new array (returns a value)
+
+
+
+var arr = [1,2,3,4,5];
+var arr2 = arr.map(function(element){
+    return "$"+element;
+})
+
+console.log(arr2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

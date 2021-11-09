@@ -1,0 +1,114 @@
+// // // // there are two ways to write function in js
+
+// // // // function declaration format
+
+// // // // function to add two numbers
+
+// // // // you don't need to specify return type or parameter type 
+// // // // return statement is optional
+
+
+// // // // function add(a,b){
+// // // //     var c = a+b;
+// // // //     return c;
+// // // // }
+// // // // console.log(add(5,4));// passing numbers as arguments
+// // // // console.log(add("hello ","there"));
+
+// // // // if you dont specify a return value in the function, js adds a default return during 
+// // // // runtime
+
+// // // function add(a,b){
+// // //     var c = a+b;
+// // //     console.log(c);// this is printing the 19 and the 9
+// // //     return; // this return is undefined
+// // // }
+// // // add(9,10);
+// // // console.log(add(5,4));//the console.log here prints the return and so this returns
+// // //                     // undefined
+
+// // // it is possible in js to pass varying number of parameters
+
+// // //  write a function to return the sum of the passed parameters
+
+// function sum(){// didn't specify any parameter
+//     var total = 0;
+//     for(var i=0;i<arguments.length;i++){
+//         // in a loop go through each element in the argument and add it to total
+//         total+=arguments[i];
+//     }
+//     console.log(arguments)
+//     return total;
+// }
+// // //  arguments is a built in object in js that can be used to store the variables passed
+// // // at runtime
+// // //  arguments work the same way as an array but it is not an array
+// // console.log(sum(1,2,3,4,5,6));
+// // console.log(sum(234,456,779,234,456,345,234));
+// // console.log(sum());
+
+// function isUnder50(){
+//     //var bool = true;
+//     for(var i=0;i<arguments.length;i++){
+//         if(arguments[i]>=50)
+//             return false;
+//     }
+//     return true;
+// }
+
+// console.log(isUnder50(1,2,3,4,5,6,7));// true
+// console.log(isUnder50(232,49));//false
+// console.log(isUnder50(50, 45));//false
+
+// function declaration format
+
+function add(a,b){
+    return a+b;
+}
+
+var hello = add;
+
+console.log(hello(20,20));
+console.log(add(5,4));
+
+// // // function expression format
+// you are declaring an anonymous function and assigning it to a variable
+
+// var add1 = function (a,b){// anonymous function
+//     return a+b;
+// }
+
+// var add1 = (a,b)=>{// arrow notation
+//     return a+b;
+// }
+var add1 = (a,b)=>a+b;
+
+
+console.log(typeof add1);
+console.log(add1(9,11));
+
+// you replace the function keyword with =>
+
+
+// function expression format
+
+// var area = function(r){
+//     var value = Math.PI*r*r;
+//     return value;
+// }
+
+
+
+// console.log(area(3));
+
+// using arrow notation
+// function(a,b){.....} -----  (a,b)=>{.....}
+// var area = (r)=>{
+//     var value = Math.PI*r*r;
+//     return value;
+// }
+// console.log(area(3));
+
+
+
+

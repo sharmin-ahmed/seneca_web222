@@ -1,0 +1,88 @@
+<!-- you have some text that you mark up using different elements
+
+what you wrote in the code:
+
+var a = 2;
+var b = 3;
+console.log(a+b);
+
+// output : 5
+
+tags 
+<h1> is the starting tag
+</h1> is the ending tag
+empty elements have one tag: <img src=""> <br> <hr>
+elements
+the combination of the tags and the text/ content in between
+<h1>This is a header</h1> ---  header element
+attributes --  something that provides more info about about that element
+<img src=""> --- src is an attribute that provides the source of the image
+<a href=""></a>  ---  href is an attribute that provides the url of the anchor
+
+global attributes --  these are attributes common to all the elements in html
+
+id, class, title
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <!-- head contains some important info about your webpage
+        title
+        link to external js file
+        link to external css file
+
+        -->
+        <meta charset="utf-8">
+        <title>My Web Page</title>
+    </head>
+
+    <body>
+        <!-- the body element contains everything that you see in your browser window -->
+        <!-- This is a comment -->
+        <h1>Hello &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; World!</h1>
+        <a href="#link">Go to the bottom of the page</a>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <br>
+        <hr>
+        <blockquote>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</blockquote>
+        <img src="pexels-photo-462118.jpeg" alt="This is a butterfly">
+        
+        <!-- bullet points -->
+        <ul>
+            <!-- outer tag of ul, start and end of a list -->
+            <!-- each list item-->
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
+
+        <!-- numbered points -->
+        <ol id="link">
+            <!-- outer tag of ol, start and end of a list -->
+            <!-- each list item-->
+            
+            <li>First item</li>
+            <ul>
+                <!-- outer tag of ul, start and end of a list -->
+                <!-- each list item-->
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        <!-- absolute path -->
+        <a href="https://web222.ca/weeks/week05/">This is the link to week 5 lecture</a>
+        <!--relative path  -->
+        <a href="week5_second.html">Second page</a>
+    </body>
+</html>

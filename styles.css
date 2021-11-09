@@ -1,0 +1,16 @@
+@import url(another_style.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* div,p{
+    color: #DA291C;
+}
+/* tag selector */
+img{
+    width: 50%;
+} 
+/* #b{
+    color: blue;
+}
+#x{
+    background-color: crimson;
+} */

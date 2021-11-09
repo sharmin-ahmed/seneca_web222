@@ -1,0 +1,130 @@
+
+<!-- three ways to add script into html code
+
+inline js
+internal js
+external js
+
+-->
+
+<!-- <html>
+    <head>
+        <title>This is a Document!</title>
+        <meta charset="utf-8">
+    </head>
+    <body> -->
+        <!-- inline js as an attribute of the element -->
+        <!-- <button id="button" onclick="console.log('this is inline js example')">click me!!!</button> -->
+        <!-- internal js -->
+        <!-- <script>
+            function print(){
+                var str = "Peter Parker";
+                console.log('spider man is actually '+str);
+            }
+        </script> -->
+        
+        <!-- <button id="button" onclick="print();">click me too!!!</button> -->
+        <!-- external js -->
+        <!-- <script src="a_file.js"></script>
+        <button id="button" onclick="showComputation();">what about me?</button>
+    </body>
+</html> -->
+
+<!--
+the browser window has a global variable called window (this is kinda like a object)
+the window variable has a property called document
+the document has a number of different properties and methods in it 
+
+
+ -->
+
+<!-- using dom methods lets add a list into a webpage using innerhtml 
+
+step 1: create a container in your html file where you want to add the new content
+step 2: all dom codes need to be put inside window.onload
+step 3: create a reference of the container using either queryselector/ getelementbyid
+
+
+these methods are available inside window.document
+querySelector -  used to return elements based on tag, class or id
+getElementById -  used to return the element with the given id
+
+
+id/ class -- 
+id -  unique
+class-  not unique
+
+createElementNode
+createTextNode
+appendChild
+
+
+-->
+<script>
+   
+    //console.log(str.charAt(0));// where is the string???
+    // this event makes sure that the dom functions are executed only after the 
+    // web page has been loaded
+    // you can't execute dom methods without loading the dom tree
+    // halting execution here until the page has loaded and the dom tree has been generated
+    // var arr = ["peter","parker","bill","mary","jane"];
+    // window.onload = function(){
+    //     var container = document.querySelector("#a");
+    //     var str = "<ul>";
+    //     for(var i=0;i<arr.length;i++){
+    //         str+="<li>"+arr[i]+"</li>";
+    //     }
+    //     str+="</ul>";
+    //     //innerhtml is a dom property that allows you to add content into a specific 
+    //     // container of the webpage
+    //     // innerhtml add content to a container by overwriting the current content 
+    //     container.innerHTML = str;
+
+    // }
+
+
+// window, document these are all part of the DOM programming interface (api)
+
+
+// putting in simply
+// dom is a object with lots of methods and properties
+// you can use these properties to act as a connection between html and js
+// you can only use these methods and properties when the dom tree has been generated
+
+
+
+    window.onload = function(){
+        
+        var container = document.getElementById("a");
+        // create a paragraoh element node
+        // var para = document.createElement("p");
+        // // create a text node
+        // var text = document.createTextNode("This is a paragraph");
+        // // add textnode as child of paragraph element node
+        // para.appendChild(text);
+        // //add paragraph node as child of div container element node
+        // container.appendChild(para);
+        var arr = ["web222","web322","ipc144","oop244"];
+        var unordered_list = document.createElement("ul");
+        for(var i = 0;i<arr.length;i++){
+            var list = document.createElement("li");
+            var text = document.createTextNode(arr[i]);
+            list.appendChild(text);
+            unordered_list.appendChild(list);    
+        }
+        container.appendChild(unordered_list);
+    }
+        
+</script>
+<!-- empty container -->
+<div id="a"><h1>List of courses</h1></div>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!-- 
+DOM --- api
+middleware between html and js
+
+it has a number of different properties and methods associated with it that allows us
+to make changes to the current html by adding/ pdating the current dom tree
+
+the dom tree consists of the following type of nodes:
+1. element node
+2. text nodes
+3. attribute node
+
+the dom is a built in object with lots of properties and methods you can use
+to do some of these things:
+1. find and get refernce to existing elements
+2. create, remove new elements/ text nodes
+3. modify the current nodes
+4. events
+
+dom properties and methods need to used inside window.onload
+
+this is because dom properties and methods are used on the dom tree
+so the methods and properties will give you an erronous execution if its executed before the dom tree is generated
+so thats why we wait until the window has finished loading before we can execute the dom methods
+
+ -->
+<script>
+function Book(title, author, price){
+    this.title = title;
+    this.author = author;
+    this.price = price;
+}
+
+var book1 = new Book("New Brave World","Oldos Haksly",20);
+var book2 = new Book("Les Miserables","Victor Hugo",15);
+var book3 = new Book("Alchemist","Paulo Coelho",15);
+
+var book_array =[];
+book_array.push(book1, book2, book3);
+console.log(book_array)
+//book_array.push(book2);
+//book_array.push(book3);
+
+window.onload = function(){
+    var container = document.querySelector("#a");
+    var btn = document.getElementById("button");
+    //btn.onclick = function(e){
+     btn.addEventListener("dblclick",function(e){
+          // // using innerhtml
+    // var str = " ";
+    // for(var i=0;i<book_array.length;i++){
+    //     str+="<p>"+book_array[i].title+" "+book_array[i].author+" "+book_array.price+"</p>";
+    // }
+    // container.innerHTML = str;
+    for(var i=0;i<book_array.length;i++){
+        var para = document.createElement("p");
+        var str = book_array[i].title+" "+book_array[i].author+" "+book_array[i].price;    
+        var text = document.createTextNode(str);
+        para.appendChild(text);
+        container.appendChild(para);
+    }
+    var img = document.createElement("img");
+    // using setattribute
+    //img.setAttribute("src","pexels-photo-462118.jpeg");
+    //using dot notation
+    img.src = "pexels-photo-462118.jpeg";
+    img.setAttribute("width","50%");
+    //document.body.appendChild(img);
+    container.appendChild(img);
+
+     })   
+
+    //  btn.addEventListener("mouseout",function(e){
+    //     container.innerHTML="";
+
+    //  })
+      
+}
+
+</script>
+
+<!-- empty container -->
+ <div><input type="button" value = "click here!" id = "button"></div>
+
+ <div id="a">this writing will be overwritten when innerhtml is used</div>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/7DYjfjaZGas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

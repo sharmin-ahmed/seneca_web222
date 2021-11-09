@@ -1,0 +1,108 @@
+
+<!-- 
+
+margin:
+the space between the elements in the page
+padding is the space between the content and the border
+
+shorthands
+specific 
+
+display
+none 
+inline display something as inline
+inlineblock 
+block display something as block
+
+ -->
+
+
+<!-- <style>
+/* p{
+    width:50%; */
+
+    /* shorthand: width style color */
+    border: 10px dashed red;
+    /* 100px margin in top and bottom, 150px margin in right and left */
+    /* margin:100px 150px; */
+    margin: 10px 20px 30px 40px;
+    /* same margin on all sides */
+    /* margin:100px; */
+    padding:50px;
+}
+#p1{
+    margin-bottom: 30px;
+}
+#p2{
+    margin-top: 20px;
+}
+
+    </style>
+ -->
+
+<style>
+#p2{
+    display: none;
+}
+a{
+    display: block;
+}
+/* h1{
+    display: inline-block;
+    width:200px;
+    height:200px;
+} */
+/* 
+items in the container flow in a single direction
+
+*/
+/* div{
+    width:20%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; */
+    /* column-gap: 150px; */
+
+    /* display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    inline display */
+/* }
+h1{
+    border:1px solid black;
+} */
+</style>
+<script>
+window.onload = function(){
+    document.getElementById("btn").onclick=function(e){
+        document.getElementById("p2").style.display="block";
+    }
+}
+</script>
+<input type="button" id="btn" value="click">
+<p id="p1">n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset she</p>
+<p id="p2">n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset she</p>
+<p>n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset she</p>
+<p>n unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset she</p>
+
+
+<!-- <a href="">link</a> <a href="">link</a> <a href="">link</a> -->
+<!-- <div>
+<h1>Header</h1> <h1>Header</h1> <h1>Header</h1>
+</div> -->
+<style>
+    div{
+    width:20%;
+    height:25%;
+    border: 1px solid black;
+    margin:0px auto;
+    }
+
+    </style>
+<div>
+<p>This is a paragraph</p>    
+</div>
+
+
+

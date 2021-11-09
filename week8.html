@@ -1,0 +1,111 @@
+<!-- 
+stylize your webpage
+
+why is css needed?
+
+increase effficiency of code
+
+
+css syntax:
+
+selector : what elements you want to apply style on
+hands / face / feet
+
+declaration :  what type of styling you want to apply to that element 
+ bracelet/ makeup/ shoes
+
+
+ there are 3 types of css:
+
+ inline css -  using style attribute
+ internal css -  adding css between <style></style> tags
+ external css
+
+ precedence
+
+ inline> internal > external
+
+ selectors:
+ 1. tag selectors - when you apply styling based on type of element
+ 2. id/ class selectors -- 
+
+you can add multiple classes to a specific element by separating them by a space
+
+ 3. contextual selectors
+ 4. grouping selectors
+
+
+ -->
+ 
+ <!-- external css -->
+ <link rel="stylesheet" href="styles.css" type="text/css">
+ <!-- <link rel="stylesheet" href="another_styles.css" type="text/css">
+  -->
+ <style>
+     /* internal css */
+/* tag selector */
+
+/* h1{
+    color: springgreen;
+} */
+/* .a{
+    color: springgreen;
+}
+
+.c{
+    font-family: fantasy;
+}
+.d{
+    background-color: coral;
+} */
+
+/* #x{
+    background-color: deeppink;
+} */
+
+/* p#b{
+    text-decoration: underline;
+} */
+
+body{
+    background: url(pattern.jpg) repeat;
+}
+
+
+p{
+    /* X AXIS YAXIS BLUR COLOR */
+    text-shadow: 5px 5px 3px pink;
+    font-size: 200%;
+ 
+
+    font-family: "Lobster";
+
+    text-align: center;
+}
+
+div p{
+    background-color: hotpink;
+}
+ div {
+    font-weight: bold;
+    font-style: italic;
+}
+
+</style>
+
+<p style="font-weight: bold; text-decoration: underline; font-style: italic;">this is another paragraph</p>
+ <div> 
+     <!-- inline styling -->
+
+     <!-- the first paragraph is springgreen with a fantasy font -->
+<p class="a c">his is a paragraph</p>
+<p id="b">another paragraph</p>
+
+<h1 class="a c d"> Header</h1>
+
+
+<h1 id="x">Header</h1>
+
+
+<h1>Header</h1>
+</div>
