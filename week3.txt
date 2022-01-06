@@ -7,7 +7,8 @@
 // // //     } 
 // // //     return count;
 // // // }
-// // //  console.log(oddcount(3,9));// 3,5,7,9,
+// // //  console.log(oddcount(3,9));// 3,5,7,9 Odd numbers
+
 
 
 // // // standard built in objects--- string, array, regexp
